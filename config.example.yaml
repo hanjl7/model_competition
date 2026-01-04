@@ -1,0 +1,50 @@
+# AI 模型对比配置文件
+# 复制此文件为 config.yaml 并填入真实的 API Key
+
+models:
+  gpt-5.2:
+    display_name: "GPT 5.2"
+    provider: openai_compatible
+    model_id: gpt-5.2
+    base_url: https://api.openai.com/v1
+    api_key: sk-your-openai-key
+
+  claude-opus-4.5:
+    display_name: "Claude Opus 4.5"
+    provider: openrouter
+    model_id: anthropic/claude-opus-4.5
+    api_key: sk-or-your-openrouter-key
+
+  gemini-3-pro:
+    display_name: "Gemini 3 Pro"
+    provider: openrouter
+    model_id: google/gemini-3-pro
+    api_key: sk-or-your-openrouter-key
+
+  deepseek-v3.2:
+    display_name: "DeepSeek V3.2"
+    provider: openai_compatible
+    model_id: deepseek-chat
+    base_url: https://api.deepseek.com/v1
+    api_key: sk-your-deepseek-key
+
+  doubao-1.6:
+    display_name: "豆包 1.6"
+    provider: openai_compatible
+    model_id: doubao-seed-1.6
+    base_url: https://ark.cn-beijing.volces.com/api/v3
+    api_key: your-doubao-key
+
+  qwen-3-max:
+    display_name: "Qwen 3-Max"
+    provider: openai_compatible
+    model_id: qwen-max
+    base_url: https://dashscope.aliyuncs.com/compatible-mode/v1
+    api_key: sk-your-qwen-key
+
+  kimi-k2:
+    display_name: "Kimi K2"
+    provider: openai_compatible
+    model_id: kimi-k2
+    base_url: https://api.moonshot.cn/v1
+    api_key: sk-your-kimi-key

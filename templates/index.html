@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 模型对比</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11/styles/github.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/highlight.js@11"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI 模型对比</h1>
+            <p>同时对比多个大语言模型的响应</p>
+        </header>
+
+        <div class="main-card">
+            <div class="input-grid">
+                <div class="input-group">
+                    <label for="system-prompt">系统提示词</label>
+                    <textarea id="system-prompt" placeholder="定义 AI 的角色和行为方式..."></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="user-prompt">用户提示词</label>
+                    <textarea id="user-prompt" placeholder="输入你的问题或指令..." required></textarea>
+                </div>
+            </div>
+
+            <div class="section-title">
+                选择模型 <span class="hint">（最多 5 个）</span>
+            </div>
+            <div id="model-selector" class="model-grid"></div>
+
+            <button id="send-btn" class="send-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+                发送
+            </button>
+        </div>
+
+        <div id="responses" class="responses"></div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
